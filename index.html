@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f4e9">
+<title>你是什么小动物人格？</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="questions.js"></script>
+<script defer src="quiz.js"></script>
+</head>
+<body>
+<header><span class="brand"><i aria-hidden="true">✳</i> 森林观察手册</span><span class="edition">趣味人格测试</span></header>
+<main>
+<section id="home">
+<div class="cover">
+<div class="intro"><p class="kicker">动物人格图鉴</p><h1>你是什么<br><em>小动物</em>人格？</h1><p class="lead">从日常的小选择里，认领一只和你脾气相投的小动物。</p><button class="primary" id="start">开始测试</button><p class="meta">40 道生活情境题 · 单选</p></div>
+<div class="forest" aria-hidden="true"><div class="sun"></div><div class="hill far"></div><div class="hill near"></div><div class="tree tall"></div><div class="tree small"></div><div class="creature">🦊</div><span class="fern f1">✳</span><span class="fern f2">✳</span><span class="fern f3">✿</span><div class="ground"></div></div>
+</div>
+</section>
+<section id="quiz" hidden>
+<div class="sheet"><div class="status"><span id="topic"></span><span id="count"></span></div><progress id="progress" max="40" value="0" aria-label="答题进度"></progress><h2 id="question" tabindex="-1"></h2><div id="options"></div><div class="controls"><button id="back" class="secondary">上一题</button><button id="next" class="primary">下一题</button></div></div>
+</section>
+<section id="result" hidden>
+<div class="result-card"><div class="result-top"><p class="kicker">我的小动物人格</p><div id="animalIcon" aria-hidden="true"></div><h2 id="animalName"></h2><p id="quote"></p></div><div class="analysis"><h3>性格侧写</h3><p id="traits"></p><h3>你的答案留下的线索</h3><ul id="evidence"></ul><h3>隐藏优势</h3><p id="strength"></p><h3>森林彩蛋</h3><p id="egg"></p></div></div><div class="result-actions"><span>截图保存你的动物卡片</span><button id="restart" class="secondary">重新测试</button></div>
+</section>
+</main><footer>仅供娱乐与自我探索 · 不作为专业心理评估</footer>
+</body></html>
